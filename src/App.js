@@ -1,8 +1,10 @@
+import Router from "./Config/Router";
+
 const App = () => {
   return (
-    <div>
-
-    </div>
+    <>
+      <Router />
+    </>
   );
 }
 
