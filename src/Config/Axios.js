@@ -1,6 +1,6 @@
-import axios from "axios";
+import Axios from "axios";
 
-const apiHandle = axios.create({
+const apiHandle = Axios.create({
     baseURL: "https://jsonplaceholder.typicode.com/"
 });
 
@@ -8,4 +8,8 @@ const Get = (endPoint) => {
     return apiHandle.get(endPoint);
 };
 
-export { Get };
+const Post = (endPoint, data) => {
+    return apiHandle.post(endPoint, data);
+};
+
+export { Get, Post };
